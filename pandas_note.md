@@ -4,6 +4,7 @@
 
 - [如何條件篩選](#filtering)
 - [如何合併查找兩張表](#merge(),isin(),set())
+- [重新命名欄位](#rename())
 ---
 
 ## `如何條件篩選`
@@ -89,4 +90,11 @@ def find_ids():
     - list, numpy array, series, set, another dataframe column
 ---
 
+## `重新命名欄位`
+
+**範例：**
+```python
+# 題目：想法返回的name改名為customer
+return result['name'].rename(column = {'name':'customer'})
+```
 
